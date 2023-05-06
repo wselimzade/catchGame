@@ -33,6 +33,7 @@ let restartGame = function () {
   ball.style.top = 0 + "px";
   ball.style.left = 0 + "px";
   ball.style.background = "#041c32";
+  counter = 0;
   ball.addEventListener("mouseover", mouseoverFunction);
   ball.addEventListener("click", clickFunction);
 };
