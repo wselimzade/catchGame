@@ -34,6 +34,7 @@ let restartGame = function () {
   ball.style.left = 0 + "px";
   ball.style.background = "#041c32";
   scoreNumber.innerHTML = 0;
+  counter = 0;
   ball.addEventListener("mouseover", mouseoverFunction);
   ball.addEventListener("click", clickFunction);
 };
