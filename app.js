@@ -11,8 +11,8 @@ let counter = 0;
 
 let mouseoverFunction = function () {
   counter++;
-  let xPosition = parseInt((Math.random() * width) / 3);
-  let yPosition = parseInt((Math.random() * height) / 3);
+  let xPosition = parseInt((Math.random() * width) / 1.2);
+  let yPosition = parseInt((Math.random() * height) / 1.2);
   ball.style.left = xPosition + "px";
   ball.style.top = yPosition + "px";
   ball.style.width = this.clientWidth + 1 + "px";
