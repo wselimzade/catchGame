@@ -1,0 +1,146 @@
+/* @css-in default olculerini sifirlamaq */
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input {
+  border: none;
+}
+
+/* @fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+/* @color */
+
+:root {
+  --ball: #041c32;
+  --dark: #04293a;
+  --medium: #064663;
+  --light: #ecb365;
+  --text: aliceblue;
+}
+
+/* @game-area */
+
+body {
+  background: var(--ball);
+}
+
+main {
+  border: 1px solid black;
+  height: 100%;
+  margin: 20px 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-area {
+  width: 100%;
+  height: 700px;
+  border-bottom: 1px solid black;
+  background: var(--text);
+  position: relative;
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+  background: var(--ball);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.score {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 2rem;
+  background: var(--medium);
+}
+
+.score-content {
+  display: flex;
+}
+
+.score-button {
+  padding: 15px;
+  border: 1px solid var(--ball);
+  border-radius: 5px;
+  color: var(--text);
+}
+
+#restart,
+#startGame {
+  background: var(--dark);
+}
+
+#restart:hover,
+#startGame:hover {
+  background: var(--text);
+  color: var(--dark);
+}
+
+#score {
+  background: var(--dark);
+}
+
+#scoreNumber {
+  background: var(--light);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
