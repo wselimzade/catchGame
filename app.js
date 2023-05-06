@@ -15,8 +15,8 @@ let mouseoverFunction = function () {
   let yPosition = parseInt((Math.random() * height) / 3);
   ball.style.left = xPosition + "px";
   ball.style.top = yPosition + "px";
-  ball.style.width = this.clientWidth + 100 + "px";
-  ball.style.height = this.clientHeight + 100 + "px";
+  ball.style.width = this.clientWidth + 1 + "px";
+  ball.style.height = this.clientHeight + 1 + "px";
   scoreNumber.innerHTML = counter;
 };
 
